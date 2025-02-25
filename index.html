@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+  .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+            grid-gap: 10px;
+            padding: 10px;
+        }
+
+        .photo {
+            position: relative;
+            overflow: hidden; /* Untuk memotong gambar jika perlu */
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+/* Media query untuk layar yang lebih kecil */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr; /* 1 kolom */
+  }
+}
+        .caption {
+            text-align: center;
+            padding: 5px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        .shot-info {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-top: 5px;
+        }
+
+        .footer {
+            margin-top: 10px;
+            border-top: 1px solid #ccc;
+            padding-top: 5px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .blink-dots {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .blink {
+            animation: blinking 1s infinite;
+        }
+
+        @keyframes blinking {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Media queries - sesuaikan breakpoint sesuai kebutuhan */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Lebih kecil di tablet */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Paling kecil di mobile */
+            }
+        }
+		
+		/* Styling blok warna dan link */
+        .footer .footer-content {
+            background-color: #e0e0e0; /* Warna blok */
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block; /* Agar blok menyesuaikan lebar konten */
+        }
+        .footer .footer-content a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* Media queries - sesuaikan breakpoint sesuai kebutuhan */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+		
+		
+        .minimalist-text {
+            text-align: left; /* Rata tengah teks */
+            font-size: 50px; /* Ukuran teks */
+            color: #333; /* Warna teks */
+            margin-bottom: 20px; /* Jarak bawah teks */
+            padding: 60px; /* Padding di dalam teks */
+            background-color: #transparent; /* Warna latar belakang teks (opsional) */
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="minimalist-text">
+        FARID ARDIANSYAH FOTOGRAFI 2025 - @fardardinsyh  ....
+    </div>
+
+   <div class="gallery">
+  <div class="photo">
+    <img src="images/11.jpg" alt="Foto 1">
+    <div class="caption">Coming Soon</div>
+  </div>
+  <div class="photo">
+    <img src="images/13.jpg" alt="Foto 2">
+     <div class="caption">Coming Soon</div>
+  </div>
+    <div class="photo">
+    <img src="images/14.jpg" alt="Foto 2">
+     <div class="caption">Coming Soon</div>
+  </div>
+    <div class="photo">
+    <img src="images/15.jpg" alt="Foto 2">
+     <div class="caption">Coming Soon</div>
+  </div>
+    <div class="photo">
+    <img src="images/16.jpg" alt="Foto 2">
+     <div class="caption">Coming Soon</div>
+  </div>
+    <div class="photo">
+    <img src="images/17.jpg" alt="Foto 2">
+    <div class="caption">Coming Soon</div>
+  </div>
+    <div class="photo">
+    <img src="images/25.jpg" alt="Foto 2">
+    <div class="caption">Coming Soon</div>
+  </div>
+    <div class="photo">
+    <img src="images/26.jpg" alt="Foto 2">
+     <div class="caption">Coming Soon</div>
+  </div>
+    <div class="photo">
+    <img src="images/27.jpg" alt="Foto 2">
+ <div class="caption">Coming Soon</div>
+  </div>
+    <div class="photo">
+    <img src="images/28.jpg" alt="Foto 2">
+     <div class="caption">Coming Soon</div>
+  </div>
+    <div class="photo">
+    <img src="images/29.jpg" alt="Foto 2">
+	 <div class="caption">Coming Soon</div>
+  </div>
+    <div class="photo">
+    <img src="images/30.jpg" alt="Foto 2">
+     <div class="caption">Coming Soon</div>
+  </div>
+    <div class="photo">
+    <img src="images/31.jpg" alt="Foto 2">
+	 <div class="caption">Coming Soon</div>
+  </div>
+    <div class="photo">
+    <img src="images/32.jpg" alt="Foto 2">
+     <div class="caption">Coming Soon</div>
+  </div>
+    <div class="photo">
+    <img src="images/33.jpg" alt="Foto 2">
+     <div class="caption">Coming Soon</div>
+  </div>
+    <div class="photo">
+    <img src="images/34.jpg" alt="Foto 2">
+    <div class="caption">Coming Soon</div>
+  </div>
+    <div class="photo">
+    <img src="images/35.jpg" alt="Foto 2">
+    <div class="caption">Coming Soon</div>
+  </div>
+    <div class="photo">
+    <img src="images/36.jpg" alt="Foto 2">
+    <div class="caption">Coming Soon</div>
+  </div>
+    <div class="photo">
+    <img src="images/37.jpg" alt="Foto 2">
+    <div class="caption">Coming Soon</div>
+  </div>
+  <div class="photo">
+    <img src="images/12.jpg" alt="Foto 3">
+     <div class="caption">Coming Soon</div>
+  </div>
+  </div>
+
+ <div class="shot-info">
+        <p>Shot on Xiaomi</p>     <p>20 Foto 2025</p>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="blink-dots">
+                    <span class="blink">.</span><span class="blink">.</span><span class="blink">.</span>
+                </div>
+                <a href="your-link-here.com">Portfolio Farid Ardiiansyah</a> 
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
